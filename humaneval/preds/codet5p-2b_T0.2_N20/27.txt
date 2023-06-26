@@ -1,0 +1,682 @@
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k > len(arr):
+        return 0
+
+    sum = 0
+    for i in range(k):
+        sum += arr[i]
+
+    for i in range(k, len(arr)):
+        sum += arr[i]
+        sum -= arr[i-k]
+
+    return sum
+
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k == len(arr):
+        return sum(arr)
+
+    k_sum = 0
+    for i in range(k):
+        k_sum += arr[i]
+
+    k_sum = k_sum % 10
+    k_sum = k_sum * 10
+    k_sum = k_sum % 10
+
+    return k_sum + add_elements(arr[k:], k)
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k > len(arr):
+        return 0
+
+    sum = 0
+    for i in range(k):
+        sum += arr[i]
+
+    for i in range(k, len(arr)):
+        sum += arr[i]
+        if len(str(sum)) > 2:
+            sum -= arr[i-k]
+
+    return sum
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    sum = 0
+    for i in range(k):
+        sum += arr[i]
+    for i in range(k, len(arr)):
+        sum += arr[i]
+    return sum
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k == 0:
+        return 0
+    if k == len(arr):
+        return sum(arr)
+
+    res = 0
+    for i in range(k, len(arr)):
+        res += arr[i]
+        if res > k:
+            break
+    return res
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    sum = 0
+    for i in range(k):
+        sum += arr[i]
+    for i in range(k, len(arr)):
+        sum += arr[i]
+    return sum
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k == len(arr):
+        return sum(arr)
+
+    k_sum = 0
+    for i in range(k):
+        k_sum += arr[i]
+
+    k_sum = k_sum % 10
+
+    return k_sum + add_elements(arr[k:], k)
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k == 0:
+        return 0
+
+    if k > len(arr):
+        return 0
+
+    if k == len(arr):
+        return sum(arr)
+
+    if k == 1:
+        return sum(arr)
+
+    if k == 2:
+        return sum(arr)
+
+    if k == 3:
+        return sum(arr)
+
+    if k == 4:
+        return sum(arr)
+
+    if k == 5:
+        return sum(arr)
+
+    if k == 6:
+        return sum(arr)
+
+    if k == 7:
+        return sum(arr)
+
+    if k == 8:
+        return sum(arr)
+
+    if k == 9:
+        return sum(arr)
+
+    if k == 10:
+        return sum(arr)
+
+    if k == 11:
+        return sum(arr)
+
+    if k == 12:
+        return sum(arr)
+
+    if k == 13:
+        return sum(arr)
+
+    if k == 14:
+        return sum(arr)
+
+    if k == 15:
+        return sum(arr)
+
+    if k == 16:
+        return sum(arr)
+
+    if k == 17:
+        return sum(arr)
+
+    if k == 18:
+        return sum(arr)
+
+    if k == 19:
+        return sum(arr)
+
+    if k == 20:
+        return sum(arr)
+
+    if k == 21:
+        return sum(arr)
+
+    if k == 22:
+        return sum(arr)
+
+    if k == 23:
+        return sum(arr)
+
+    if k == 24:
+        return sum(arr)
+
+    if k == 25:
+        return sum(arr)
+
+    if k == 26:
+        return sum(arr)
+
+    if k == 27:
+        return sum(arr)
+
+    if k == 28:
+        return sum(arr)
+
+    if k == 29:
+        return sum(arr)
+
+    if k == 30:
+        return sum(arr)
+
+    if k == 31:
+        return sum(arr)
+
+    if k == 32:
+        return sum(arr)
+
+    if k == 33:
+        return sum(arr)
+
+    if k == 34:
+        return sum(arr)
+
+    if k == 35:
+        return sum(arr)
+
+    if k == 36:
+        return sum(arr)
+
+    if k == 37:
+        return sum(arr)
+
+    if k == 38:
+        return sum(arr)
+
+    if k == 39:
+        return sum(arr)
+
+    if k == 40:
+        return sum(arr)
+
+    if k == 41:
+        return sum(arr)
+
+    if k == 42:
+        return sum(arr)
+
+    if k == 43:
+        return sum(arr)
+
+    if k == 44:
+        return sum(arr)
+
+    if k == 45:
+        return sum(arr)
+
+    
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k > len(arr):
+        return 0
+
+    sum = 0
+    for i in range(k):
+        sum += arr[i]
+
+    for i in range(k, len(arr)):
+        sum += arr[i]
+        if len(str(sum)) > 2:
+            sum -= arr[i-k]
+    return sum
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k > len(arr):
+        return 0
+
+    sum = 0
+    for i in range(k):
+        sum += arr[i]
+    sum += sum // 10
+    return sum
+
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k == 0:
+        return 0
+
+    if k == len(arr):
+        return sum(arr)
+
+    res = 0
+    for i in range(k, len(arr)):
+        res += arr[i]
+
+    return res
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k > len(arr):
+        return 0
+
+    sum = 0
+    for i in range(k):
+        sum += arr[i]
+
+    for i in range(k, len(arr)):
+        sum += arr[i]
+        if len(str(sum)) > 2:
+            sum -= arr[i-k]
+    return sum
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k == len(arr):
+        return sum(arr)
+
+    res = 0
+    for i in range(k, len(arr)):
+        res += arr[i]
+        if res > k:
+            res -= arr[i-k]
+    return res
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k == len(arr):
+        return sum(arr)
+
+    sum_ = 0
+    for i in range(k, len(arr)):
+        sum_ += arr[i]
+        if sum_ > k:
+            break
+    return sum_
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k == 0:
+        return 0
+
+    if k == len(arr):
+        return sum(arr)
+
+    res = 0
+    for i in range(k, len(arr)):
+        res += arr[i]
+
+    return res
+
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    sum = 0
+    for i in range(k):
+        sum += arr[i]
+    for i in range(k, len(arr)):
+        sum += arr[i]
+        if len(str(sum)) > 2:
+            sum -= arr[i-k]
+    return sum
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k > len(arr):
+        return 0
+
+    sum_ = 0
+    for i in range(k):
+        sum_ += arr[i]
+
+    for i in range(k, len(arr)):
+        sum_ += arr[i] % 10
+        sum_ += arr[i] // 10
+
+    return sum_
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k > len(arr):
+        return 0
+
+    sum_ = 0
+    for i in range(k):
+        sum_ += arr[i]
+
+    for i in range(k, len(arr)):
+        sum_ += arr[i] % 10
+        sum_ += arr[i] // 10
+
+    return sum_
+
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k == len(arr):
+        return sum(arr)
+    
+    k_sum = 0
+    for i in range(k):
+        k_sum += arr[i]
+    
+    for i in range(k, len(arr)):
+        k_sum += arr[i]
+        if k_sum > k:
+            k_sum -= arr[i-k]
+    
+    return k_sum
+
+
+def add_elements(arr, k):
+    """
+    Given a non-empty array of integers arr and an integer k, return
+    the sum of the elements with at most two digits from the first k elements of arr.
+
+    Example:
+
+        Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4
+        Output: 24 # sum of 21 + 3
+
+    Constraints:
+        1. 1 <= len(arr) <= 100
+        2. 1 <= k <= len(arr)
+    """
+
+    if k > len(arr):
+        return 0
+    if k == 0:
+        return sum(arr)
+    if k == len(arr):
+        return sum(arr)
+    return sum(arr[:k]) + add_elements(arr[k:], k)
+

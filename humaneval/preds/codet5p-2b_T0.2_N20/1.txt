@@ -1,0 +1,766 @@
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.split(')')
+    paren_string = [paren_string[i] + paren_string[i + 1] for i in range(len(paren_string) - 1)]
+    return paren_string
+
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('( )', '()')
+    paren_string = paren_string.replace('( )( )', '()()')
+    paren_string = paren_string.replace('( )( )( )', '()()()')
+    paren_string = paren_string.replace('( )( )( )( )', '()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )', '()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )', '()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )', '()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )', '()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )', '()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.strip()
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('( )', '()')
+    paren_string = paren_string.replace('( )( )', '()()')
+    paren_string = paren_string.replace('( )( )( )', '()()()')
+    paren_string = paren_string.replace('( )( )( )( )', '()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )', '()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )', '()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )', '()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )', '()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )', '()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )', '()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()()()')
+    paren_string = paren_string.replace
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.strip()
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('( )', '()')
+    paren_string = paren_string.replace('(()', '()')
+    paren_string = paren_string.replace('(()(', '()()')
+    paren_string = paren_string.replace('(()())', '()()')
+    paren_string = paren_string.replace('(())', '()')
+    paren_string = paren_string.replace('()()', '()')
+    paren_string = paren_string.replace('()(', '()')
+    paren_string = paren_string.replace('()())', '()')
+    paren_string = paren_string.replace('()(', '()')
+    paren_string = paren_string.replace('()(())', '()')
+    paren_string = paren_string.replace('()(()(', '()()')
+    paren_string = paren_string.replace('()(()())', '()()')
+    paren_string = paren_string.replace('()(()(()', '()()')
+    paren_string = paren_string.replace('()(()())()', '()()')
+    paren_string = paren_string.replace('()(()(()(', '()()')
+    paren_string = paren_string.replace('()(()())()()', '()()')
+    paren_string = paren_string.replace('()(()(()(()', '()()')
+    paren_string = paren_string.replace('()(()())()()()', '()()')
+    paren_string = paren_string.replace('()(()(()(()(', '()()')
+    paren_string = paren_string.replace('()(()())()()()()', '()()')
+    paren_string = paren_string.replace('()(()(()(()(()', '()()')
+    paren_string = paren_string.replace('()(()())()()()()()', '()()')
+    paren_string = paren_string.replace('()(()(()(()(()(', '()()')
+    paren_string = paren_string.replace('()(()())()()()()()()', '()()')
+    paren_string = paren_string.replace('()(()(()(()(()(()', '()()')
+    paren_string = paren_string.replace('()(()())()()()()()()()', '()()')
+    paren_string = paren_string.replace('()(()(()(()(()(()(', '()()')
+    paren_string = paren_string.
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.split(')')
+    return paren_string
+    
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('( )', '()')
+    paren_string = paren_string.replace('( )( )', '()()')
+    paren_string = paren_string.replace('( )( )( )', '()()()')
+    paren_string = paren_string.replace('( )( )( )( )', '()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )', '()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )', '()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )', '()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )', '()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )', '()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()()')
+    paren_string = paren_string.replace('( )( )( )( )( )( )( )( )( )( )( )( )( )( )( )', '()()()()()()()()()()()()()()')
+    paren_string = paren_string
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_list = []
+    for char in paren_string:
+        if char == '(':
+            paren_list.append(char)
+        elif char == ')':
+            if paren_list:
+                paren_list.pop()
+            else:
+                paren_list.append(char)
+    return paren_list
+
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_string.replace(')', ')')
+    paren_string = paren_string.replace('(', '(')
+    paren_string = paren_
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.strip()
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('( )', '()')
+    paren_string = paren_string.replace('(()', '()')
+    paren_string = paren_string.replace('()(', '()')
+    paren_string = paren_string.replace('()()', '()')
+    paren_string = paren_string.replace('(()(', '()')
+    paren_string = paren_string.replace('()()())', '()()')
+    paren_string = paren_string.replace('()()()(', '()()')
+    paren_string = paren_string.replace('()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()()()()()(', '()()')
+    paren_string = paren_string.replace('()()()()()()()()()()()()()()()
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('( )', '()')
+    paren_string = paren_string.replace('(()( )', '()()')
+    paren_string = paren_string.replace('(()(()( )', '()()()')
+    paren_string = paren_string.replace('(()(()(()( )', '()()()()')
+    paren_string = paren_string.replace('(()(()(()(()( )', '()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()( )', '()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()( )', '()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()( )', '()()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()(()( )', '()()()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()(()(()( )', '()()()()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()(()(()( )', '()()()()()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()(()(()( )', '()()()()()()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()(()(()( )', '()()()()()()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()(()(()( )', '()()()()()()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()(()(()( )', '()()()()()()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()(()(()( )', '()()()()()()()()()()()()')
+    paren_string = paren_string.replace('(()(()(()(()(()(()(()(()(()( )', '()()()()()()()()()()
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.split(' ')
+    paren_string = [paren for paren in paren_string if paren!= '']
+    return paren_string
+
+
+from typing import List
+
+
+def separate_paren_groups(paren_string: str) -> List[str]:
+    """ Input to this function is a string containing multiple groups of nested parentheses. Your goal is to
+    separate those group into separate strings and return the list of those.
+    Separate groups are balanced (each open brace is properly closed) and not nested within each other
+    Ignore any spaces in the input string.
+    >>> separate_paren_groups('( ) (( )) (( )( ))')
+    ['()', '(())', '(()())']
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.split(')')
+    return paren_string
+

@@ -1,0 +1,1628 @@
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'null'
+    if number < 0 or number > 1000:
+        raise ValueError('Number must be between 1 and 1000')
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'null'
+    if number < 0:
+        number = number * -1
+    roman_numeral_dict = {1000:'m', 900: 'cm', 500: 'd', 400: 'cd', 100: 'c', 90: 'xc', 50: 'l', 40: 'xl', 10: 'x', 9: 'ix', 5: 'v', 4: 'iv', 1: 'i'}
+    roman_numeral_list = []
+    for key, value in roman_numeral_dict.items():
+        while number >= key:
+            roman_numeral_list.append(value)
+            number -= key
+    return ''.join(roman_numeral_list)
+
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'zero'
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        return 'xxvii'
+    if number == 48:
+        return 'xxviii'
+    if number
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'null'
+    if number < 0 or number > 1000:
+        raise ValueError('number must be between 1 and 1000')
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number < 1 or number > 1000:
+        raise ValueError('Number must be between 1 and 1000')
+    if number == 0:
+        return 'zero'
+    if number < 10:
+        return int_to_mini_roman(number)
+    if number < 100:
+        return 'x' + int_to_mini_roman(number % 10)
+    if number < 1000:
+        return 'l' + int_to_mini_roman(number % 100)
+    if number < 1000000:
+        return 'c' + int_to_mini_roman(number % 1000)
+    if number < 1000000000:
+        return 'd' + int_to_mini_roman(number % 1000000)
+    if number < 1000000000000:
+        return'm' + int_to_mini_roman(number % 1000000000)
+    return 'n' + int_to_mini_roman(number % 10000000000)
+
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return ''
+    if number < 0 or number > 1000:
+        raise ValueError('Number must be between 1 and 1000')
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        return '
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'zero'
+    if number < 0 or number > 1000:
+        raise ValueError('Number out of range.')
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        return '
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'zero'
+    roman_nums = {1: 'i', 2: 'ii', 3: 'iii', 4: 'iv', 5: 'v', 6: 'vi', 7: 'vii', 8: 'viii', 9: 'ix', 10: 'x',
+                  11: 'xi', 12: 'xii', 13: 'xiii', 14: 'xiv', 15: 'xv', 16: 'xvi', 17: 'xvii', 18: 'xviii',
+                  19: 'xix', 20: 'xx', 30: 'xxx', 40: 'xxxx', 50: 'l', 60: 'lx', 70: 'lxx', 80: 'lxxx',
+                  90: 'xc', 100: 'xcx', 200: 'cc', 300: 'ccc', 400: 'cd', 500: 'd', 600: 'dx', 700: 'dxc',
+                  800: 'dcc', 900: 'cm', 1000:'m'}
+    roman_nums_lower = {'i': 1, 'ii': 2, 'iii': 3, 'iv': 4, 'v': 5, 'vi': 6, 'vii': 7, 'viii': 8, 'ix': 9, 'x': 10,
+                        'xi': 11, 'xii': 12, 'xiii': 13, 'xiv': 14, 'xv': 15, 'xvi': 16, 'xvii': 17, 'xviii': 18,
+                        'xix': 19, 'xx': 20, 'xxx': 30, 'xxxx': 40, 'l': 50, 'lx': 60, 'lxx': 70, 'lxxx': 80, 'xc': 90,
+                        'xcx': 100, 'cc': 200, 'ccc': 300, 'cd': 400, 'd': 500, 'dx': 600, 'dxc': 700, 'dcc': 800,
+                        'cm': 900,'m': 1000}
+    roman_nums_lower_keys = list(roman_nums_lower.keys())
+    roman_nums_lower_values = list(roman_nums_lower.values())
+    roman_nums_lower_keys.sort(reverse=True)
+    roman_nums_lower_values.sort(reverse=True)
+    roman_nums_lower_keys_list = list(roman_nums_lower_keys)
+    roman_nums_lower_values_list = list(roman_nums_lower_values)
+    roman_nums_lower_keys_list.sort()
+    roman_nums_lower_values_list.sort()
+    roman_nums_lower_keys_list_len = len(roman_nums_lower_keys_list)
+    roman_nums_lower_values_list_len = len(roman_nums_lower_values_list)
+    roman_nums_lower_keys_list
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'null'
+    if number < 0:
+        return 'null'
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        return 'xxvii'
+    if number == 48
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number < 1 or number > 1000:
+        raise ValueError('number must be between 1 and 1000')
+    if number == 0:
+        return 'zero'
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return ''
+    if number < 0:
+        number = abs(number)
+        sign = '-'
+    else:
+        sign = ''
+    number = int(number)
+    roman_nums = {1: 'I', 5: 'V', 10: 'X', 50: 'L', 100: 'C', 500: 'D', 1000: 'M'}
+    result = ''
+    for key, value in roman_nums.items():
+        while number >= key:
+            result += value
+            number -= key
+    return sign + result
+
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number < 1 or number > 1000:
+        raise ValueError('Number must be between 1 and 1000')
+
+    if number == 1:
+        return 'i'
+    elif number == 2:
+        return 'ii'
+    elif number == 3:
+        return 'iii'
+    elif number == 4:
+        return 'iv'
+    elif number == 5:
+        return 'v'
+    elif number == 6:
+        return 'vi'
+    elif number == 7:
+        return 'vii'
+    elif number == 8:
+        return 'viii'
+    elif number == 9:
+        return 'ix'
+    elif number == 10:
+        return 'x'
+    elif number == 11:
+        return 'xi'
+    elif number == 12:
+        return 'xii'
+    elif number == 13:
+        return 'xiii'
+    elif number == 14:
+        return 'xiv'
+    elif number == 15:
+        return 'xv'
+    elif number == 16:
+        return 'xvi'
+    elif number == 17:
+        return 'xvii'
+    elif number == 18:
+        return 'xviii'
+    elif number == 19:
+        return 'xix'
+    elif number == 20:
+        return 'xx'
+    elif number == 21:
+        return 'xi'
+    elif number == 22:
+        return 'xii'
+    elif number == 23:
+        return 'xiii'
+    elif number == 24:
+        return 'xiv'
+    elif number == 25:
+        return 'xv'
+    elif number == 26:
+        return 'xvi'
+    elif number == 27:
+        return 'xvii'
+    elif number == 28:
+        return 'xviii'
+    elif number == 29:
+        return 'xix'
+    elif number == 30:
+        return 'xxi'
+    elif number == 31:
+        return 'xxii'
+    elif number == 32:
+        return 'xxiii'
+    elif number == 33:
+        return 'xxiv'
+    elif number == 34:
+        return 'xxv'
+    elif number == 35:
+        return 'xxvi'
+    elif number == 36:
+        return 'xxvii'
+    elif number == 37:
+        return 'xxviii'
+    elif number == 38:
+        return 'xxix'
+    elif number == 39:
+        return 'xxx'
+    elif number == 40:
+        return 'xx'
+    elif number == 41:
+        return 'xxi'
+    elif number == 42:
+        return 'xxii'
+    elif number == 43:
+        return 'xxiii'
+    elif number == 44:
+        return 'xxiv'
+    elif number == 45
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'null'
+    if number < 0 or number > 1000:
+        raise ValueError('Number must be between 1 and 1000')
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xxi'
+    if number == 41:
+        return 'xxii'
+    if number == 42:
+        return 'xxiii'
+    if number == 43:
+        return 'xxiv'
+    if number == 44:
+        return 'xxv'
+    if number == 45:
+        return 'xxvi'
+    if number == 46:
+        return 'xxvii'
+    if number == 47:
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'zero'
+    if number < 0 or number > 1000:
+        raise ValueError('number must be between 1 and 1000')
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'null'
+    if number < 0:
+        number = number * -1
+    roman_numeral_map = {1: 'i', 4: 'iv', 5: 'v', 9: 'ix', 10: 'x', 40: 'l', 50: 'l',
+                          90: 'xc', 100: 'c', 400: 'cd', 500: 'd', 900: 'cm', 1000:'m'}
+    result = ''
+    for key in sorted(roman_numeral_map.keys(), reverse=True):
+        while number >= key:
+            result += roman_numeral_map[key]
+            number -= key
+    return result
+
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return ''
+    if number < 0:
+        number = number * -1
+    roman_num = ''
+    while number > 0:
+        if number >= 1000:
+            roman_num +='m'
+            number -= 1000
+        elif number >= 900:
+            roman_num += 'cm'
+            number -= 900
+        elif number >= 500:
+            roman_num += 'd'
+            number -= 500
+        elif number >= 400:
+            roman_num += 'cd'
+            number -= 400
+        elif number >= 100:
+            roman_num += 'c'
+            number -= 100
+        elif number >= 90:
+            roman_num += 'xc'
+            number -= 90
+        elif number >= 50:
+            roman_num += 'l'
+            number -= 50
+        elif number >= 40:
+            roman_num += 'xl'
+            number -= 40
+        elif number >= 10:
+            roman_num += 'x'
+            number -= 10
+        elif number >= 9:
+            roman_num += 'ix'
+            number -= 9
+        elif number >= 5:
+            roman_num += 'v'
+            number -= 5
+        elif number >= 4:
+            roman_num += 'iv'
+            number -= 4
+        elif number >= 1:
+            roman_num += 'i'
+            number -= 1
+    return roman_num[::-1]
+
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return ''
+    if number < 0 or number > 1000:
+        raise ValueError('Number must be between 1 and 1000')
+    if number < 4:
+        return 'I' * number
+    if number < 9:
+        return 'I' + 'V' * (number - 5)
+    if number < 40:
+        return 'X' + 'L' * (number - 10)
+    if number < 90:
+        return 'X' + 'C' + 'D' * (number - 50)
+    if number < 400:
+        return 'C' + 'D' * (number - 100)
+    if number < 900:
+        return 'C' + 'M' + 'D' * (number - 500)
+    if number < 4000:
+        return 'M' + 'M' * (number - 1000)
+    raise ValueError('Number must be between 1 and 4000')
+
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'null'
+    if number < 0 or number > 1000:
+        raise ValueError('Number out of range')
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        return 'xx
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'zero'
+    if number < 0:
+        number = number * -1
+    roman = ''
+    while number > 0:
+        if number >= 1000:
+            roman +='m'
+            number -= 1000
+        elif number >= 900:
+            roman += 'cm'
+            number -= 900
+        elif number >= 500:
+            roman += 'd'
+            number -= 500
+        elif number >= 400:
+            roman += 'cd'
+            number -= 400
+        elif number >= 100:
+            roman += 'c'
+            number -= 100
+        elif number >= 90:
+            roman += 'xc'
+            number -= 90
+        elif number >= 50:
+            roman += 'l'
+            number -= 50
+        elif number >= 40:
+            roman += 'xl'
+            number -= 40
+        elif number >= 10:
+            roman += 'x'
+            number -= 10
+        elif number >= 9:
+            roman += 'ix'
+            number -= 9
+        elif number >= 5:
+            roman += 'v'
+            number -= 5
+        elif number >= 4:
+            roman += 'iv'
+            number -= 4
+        elif number >= 1:
+            roman += 'i'
+            number -= 1
+    return roman
+
+
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
+
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
+    """
+
+    if number == 0:
+        return 'zero'
+    if number == 1:
+        return 'i'
+    if number == 2:
+        return 'ii'
+    if number == 3:
+        return 'iii'
+    if number == 4:
+        return 'iv'
+    if number == 5:
+        return 'v'
+    if number == 6:
+        return 'vi'
+    if number == 7:
+        return 'vii'
+    if number == 8:
+        return 'viii'
+    if number == 9:
+        return 'ix'
+    if number == 10:
+        return 'x'
+    if number == 11:
+        return 'xi'
+    if number == 12:
+        return 'xii'
+    if number == 13:
+        return 'xiii'
+    if number == 14:
+        return 'xiv'
+    if number == 15:
+        return 'xv'
+    if number == 16:
+        return 'xvi'
+    if number == 17:
+        return 'xvii'
+    if number == 18:
+        return 'xviii'
+    if number == 19:
+        return 'xix'
+    if number == 20:
+        return 'xx'
+    if number == 21:
+        return 'xi'
+    if number == 22:
+        return 'xii'
+    if number == 23:
+        return 'xiii'
+    if number == 24:
+        return 'xiv'
+    if number == 25:
+        return 'xv'
+    if number == 26:
+        return 'xvi'
+    if number == 27:
+        return 'xvii'
+    if number == 28:
+        return 'xviii'
+    if number == 29:
+        return 'xix'
+    if number == 30:
+        return 'xxi'
+    if number == 31:
+        return 'xxii'
+    if number == 32:
+        return 'xxiii'
+    if number == 33:
+        return 'xxiv'
+    if number == 34:
+        return 'xxv'
+    if number == 35:
+        return 'xxvi'
+    if number == 36:
+        return 'xxvii'
+    if number == 37:
+        return 'xxviii'
+    if number == 38:
+        return 'xxix'
+    if number == 39:
+        return 'xxx'
+    if number == 40:
+        return 'xx'
+    if number == 41:
+        return 'xxi'
+    if number == 42:
+        return 'xxii'
+    if number == 43:
+        return 'xxiii'
+    if number == 44:
+        return 'xxiv'
+    if number == 45:
+        return 'xxv'
+    if number == 46:
+        return 'xxvi'
+    if number == 47:
+        return 'xxvii'
+    if number == 48:
+        return 'xxviii'
+    if number

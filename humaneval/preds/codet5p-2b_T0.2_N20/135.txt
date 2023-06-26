@@ -1,0 +1,1109 @@
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1
+    if len(arr) == 3:
+        return 2
+    if len(arr) == 4:
+        return 1
+    if len(arr) == 5:
+        return 2
+    if len(arr) == 6:
+        return 2
+    if len(arr) == 7:
+        return 3
+    if len(arr) == 8:
+        return 3
+    if len(arr) == 9:
+        return 4
+    if len(arr) == 10:
+        return 4
+    if len(arr) == 11:
+        return 5
+    if len(arr) == 12:
+        return 5
+    if len(arr) == 13:
+        return 6
+    if len(arr) == 14:
+        return 6
+    if len(arr) == 15:
+        return 7
+    if len(arr) == 16:
+        return 7
+    if len(arr) == 17:
+        return 8
+    if len(arr) == 18:
+        return 8
+    if len(arr) == 19:
+        return 9
+    if len(arr) == 20:
+        return 9
+    if len(arr) == 21:
+        return 10
+    if len(arr) == 22:
+        return 10
+    if len(arr) == 23:
+        return 11
+    if len(arr) == 24:
+        return 11
+    if len(arr) == 25:
+        return 12
+    if len(arr) == 26:
+        return 12
+    if len(arr) == 27:
+        return 13
+    if len(arr) == 28:
+        return 13
+    if len(arr) == 29:
+        return 14
+    if len(arr) == 30:
+        return 14
+    if len(arr) == 31:
+        return 15
+    if len(arr) == 32:
+        return 15
+    if len(arr) == 33:
+        return 16
+    if len(arr) == 34:
+        return 16
+    if len(arr) == 35:
+        return 17
+    if len(arr) == 36:
+        return 17
+    if len(arr) == 37:
+        return 18
+    if len(arr) == 38:
+        return 18
+    if len(arr) == 39:
+        return 19
+    if len(arr) == 40:
+        return 19
+    if len(arr) == 41:
+        return 20
+    if len(arr) == 42:
+        return 20
+    if len(arr) == 43:
+        return 21
+    if len(arr) == 44:
+        return 21
+    if len(arr) == 45:
+        return 22
+    if len(arr) == 46:
+        return 22
+    if len
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    arr.sort()
+    return sum(abs(i-j) for i, j in zip(arr, arr[1:]))
+
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    arr.sort()
+    min_change = 0
+    for i in range(len(arr)):
+        if arr[i]!= arr[len(arr) - i - 1]:
+            min_change += 1
+    return min_change
+
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 0:
+        return 0
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1
+    if len(arr) == 3:
+        return 2
+    if len(arr) == 4:
+        return 1
+    if len(arr) == 5:
+        return 2
+    if len(arr) == 6:
+        return 2
+    if len(arr) == 7:
+        return 3
+    if len(arr) == 8:
+        return 3
+    if len(arr) == 9:
+        return 4
+    if len(arr) == 10:
+        return 4
+    if len(arr) == 11:
+        return 5
+    if len(arr) == 12:
+        return 5
+    if len(arr) == 13:
+        return 6
+    if len(arr) == 14:
+        return 6
+    if len(arr) == 15:
+        return 7
+    if len(arr) == 16:
+        return 7
+    if len(arr) == 17:
+        return 8
+    if len(arr) == 18:
+        return 8
+    if len(arr) == 19:
+        return 9
+    if len(arr) == 20:
+        return 9
+    if len(arr) == 21:
+        return 10
+    if len(arr) == 22:
+        return 10
+    if len(arr) == 23:
+        return 11
+    if len(arr) == 24:
+        return 11
+    if len(arr) == 25:
+        return 12
+    if len(arr) == 26:
+        return 12
+    if len(arr) == 27:
+        return 13
+    if len(arr) == 28:
+        return 13
+    if len(arr) == 29:
+        return 14
+    if len(arr) == 30:
+        return 14
+    if len(arr) == 31:
+        return 15
+    if len(arr) == 32:
+        return 15
+    if len(arr) == 33:
+        return 16
+    if len(arr) == 34:
+        return 16
+    if len(arr) == 35:
+        return 17
+    if len(arr) == 36:
+        return 17
+    if len(arr) == 37:
+        return 18
+    if len(arr) == 38:
+        return 18
+    if len(arr) == 39:
+        return 19
+    if len(arr) == 40:
+        return 19
+    if len(arr) == 41:
+        return 20
+    if len(arr) == 42:
+        return 20
+    if len(arr) == 43:
+        return 21
+    if len(arr) == 44:
+        return 21
+    if len(arr) == 45:
+        return 22
+    if len
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    arr.sort()
+    i = 0
+    j = len(arr) - 1
+    while i < j:
+        if arr[i]!= arr[j]:
+            return j - i
+        i += 1
+        j -= 1
+    return 0
+
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1 if arr[0]!= arr[1] else 0
+    if len(arr) == 3:
+        return 1 if arr[0]!= arr[1] and arr[0]!= arr[2] and arr[1]!= arr[2] else 0
+    if len(arr) == 4:
+        return 1 if arr[0]!= arr[1] and arr[0]!= arr[2] and arr[0]!= arr[3] and arr[1]!= arr[2] and arr[1]!= arr[3] and arr[2]!= arr[3] else 0
+    if len(arr) == 5:
+        return 1 if arr[0]!= arr[1] and arr[0]!= arr[2] and arr[0]!= arr[3] and arr[0]!= arr[4] and arr[1]!= arr[2] and arr[1]!= arr[3] and arr[1]!= arr[4] and arr[2]!= arr[3] and arr[2]!= arr[4] and arr[3]!= arr[4] else 0
+    if len(arr) == 6:
+        return 1 if arr[0]!= arr[1] and arr[0]!= arr[2] and arr[0]!= arr[3] and arr[0]!= arr[4] and arr[0]!= arr[5] and arr[1]!= arr[2] and arr[1]!= arr[3] and arr[1]!= arr[4] and arr[1]!= arr[5] and arr[2]!= arr[3] and arr[2]!= arr[4] and arr[2]!= arr[5] and arr[3]!= arr[4] and arr[3]!= arr[5] and arr[4]!= arr[5] else 0
+    if len(arr) == 7:
+        return 1 if arr[0]!= arr[1] and arr[0]!= arr[2] and arr[0]!= arr[3] and arr[0]!= arr[4] and arr[0]!= arr[5] and arr[0]!= arr[6] and arr[1]!= arr[2] and arr[1]!= arr[3] and arr[1]!= arr[4] and arr[1]!= arr[5] and arr[1]!= arr[6] and arr[2]!= arr[3] and arr[2]!= arr[4] and arr[2]!= arr[5] and arr[2]!= arr[6] and arr[3]!= arr[4] and arr[3]!= arr[5] and arr[3]!= arr[6] and arr[4]!= arr[5]
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1
+    if len(arr) == 3:
+        return 2
+    if len(arr) == 4:
+        return 1
+    if len(arr) == 5:
+        return 2
+    if len(arr) == 6:
+        return 2
+    if len(arr) == 7:
+        return 1
+    if len(arr) == 8:
+        return 0
+    if len(arr) == 9:
+        return 1
+    if len(arr) == 10:
+        return 0
+    if len(arr) == 11:
+        return 1
+    if len(arr) == 12:
+        return 0
+    if len(arr) == 13:
+        return 1
+    if len(arr) == 14:
+        return 0
+    if len(arr) == 15:
+        return 1
+    if len(arr) == 16:
+        return 0
+    if len(arr) == 17:
+        return 1
+    if len(arr) == 18:
+        return 0
+    if len(arr) == 19:
+        return 1
+    if len(arr) == 20:
+        return 0
+    if len(arr) == 21:
+        return 1
+    if len(arr) == 22:
+        return 0
+    if len(arr) == 23:
+        return 1
+    if len(arr) == 24:
+        return 0
+    if len(arr) == 25:
+        return 1
+    if len(arr) == 26:
+        return 0
+    if len(arr) == 27:
+        return 1
+    if len(arr) == 28:
+        return 0
+    if len(arr) == 29:
+        return 1
+    if len(arr) == 30:
+        return 0
+    if len(arr) == 31:
+        return 1
+    if len(arr) == 32:
+        return 0
+    if len(arr) == 33:
+        return 1
+    if len(arr) == 34:
+        return 0
+    if len(arr) == 35:
+        return 1
+    if len(arr) == 36:
+        return 0
+    if len(arr) == 37:
+        return 1
+    if len(arr) == 38:
+        return 0
+    if len(arr) == 39:
+        return 1
+    if len(arr) == 40:
+        return 0
+    if len(arr) == 41:
+        return 1
+    if len(arr) == 42:
+        return 0
+    if len(arr) == 43:
+        return 1
+    if len(arr) == 44:
+        return 0
+    if len(arr) == 45:
+        return 1
+    if len(arr) == 46:
+        return 0
+    if len
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+
+    arr.sort()
+    i = 0
+    j = len(arr) - 1
+    while i < j:
+        if arr[i]!= arr[j]:
+            return j - i
+        i += 1
+        j -= 1
+    return 0
+
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return abs(arr[0] - arr[1])
+    if len(arr) == 3:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[2]), abs(arr[2] - arr[0]))
+    if len(arr) == 4:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[2]), abs(arr[2] - arr[3]), abs(arr[3] - arr[0]))
+    if len(arr) == 5:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[2]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[4] - arr[0]))
+    if len(arr) == 6:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[2]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[4] - arr[5]), abs(arr[5] - arr[0]))
+    if len(arr) == 7:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[2]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[4] - arr[5]), abs(arr[5] - arr[6]), abs(arr[6] - arr[0]))
+    if len(arr) == 8:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[2]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[4] - arr[5]), abs(arr[5] - arr[6]), abs(arr[6] - arr[7]), abs(arr[7] - arr[0]))
+    if len(arr) == 9:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[2]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[4] - arr[5]), abs(arr[5] - arr[6]), abs(arr[6] - arr[7]), abs(arr[7] - arr[8]), abs(arr[8] - arr[0]))
+    if len(arr) == 10:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[2
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 0:
+        return 0
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        if arr[0] == arr[1]:
+            return 0
+        else:
+            return 1
+    if len(arr) == 3:
+        if arr[0] == arr[1] and arr[1] == arr[2]:
+            return 0
+        elif arr[0] == arr[1] or arr[1] == arr[2] or arr[0] == arr[2]:
+            return 1
+        else:
+            return 2
+    if len(arr) == 4:
+        if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3]:
+            return 0
+        elif arr[0] == arr[1] or arr[1] == arr[2] or arr[2] == arr[3] or arr[0] == arr[3]:
+            return 1
+        else:
+            return 2
+    if len(arr) == 5:
+        if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] and arr[3] == arr[4]:
+            return 0
+        elif arr[0] == arr[1] or arr[1] == arr[2] or arr[2] == arr[3] or arr[3] == arr[4] or arr[0] == arr[4]:
+            return 1
+        else:
+            return 2
+    if len(arr) == 6:
+        if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] and arr[3] == arr[4] and arr[4] == arr[5]:
+            return 0
+        elif arr[0] == arr[1] or arr[1] == arr[2] or arr[2] == arr[3] or arr[3] == arr[4] or arr[4] == arr[5] or arr[0] == arr[5]:
+            return 1
+        else:
+            return 2
+    if len(arr) == 7:
+        if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] and arr[3] == arr[4] and arr[4] == arr[5] and arr[5] == arr[6]:
+            return 0
+        elif arr[0] == arr[1] or arr[1] == arr[2] or arr[2] == arr[3] or arr[3] == arr[4] or arr[4] == arr[5] or arr[5] == arr[6] or arr[
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 0:
+        return 0
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1
+    if len(arr) == 3:
+        return 2
+    if len(arr) == 4:
+        return 3
+    if len(arr) == 5:
+        return 4
+    if len(arr) == 6:
+        return 5
+    if len(arr) == 7:
+        return 6
+    if len(arr) == 8:
+        return 7
+    if len(arr) == 9:
+        return 8
+    if len(arr) == 10:
+        return 9
+    if len(arr) == 11:
+        return 10
+    if len(arr) == 12:
+        return 11
+    if len(arr) == 13:
+        return 12
+    if len(arr) == 14:
+        return 13
+    if len(arr) == 15:
+        return 14
+    if len(arr) == 16:
+        return 15
+    if len(arr) == 17:
+        return 16
+    if len(arr) == 18:
+        return 17
+    if len(arr) == 19:
+        return 18
+    if len(arr) == 20:
+        return 19
+    if len(arr) == 21:
+        return 20
+    if len(arr) == 22:
+        return 21
+    if len(arr) == 23:
+        return 22
+    if len(arr) == 24:
+        return 23
+    if len(arr) == 25:
+        return 24
+    if len(arr) == 26:
+        return 25
+    if len(arr) == 27:
+        return 26
+    if len(arr) == 28:
+        return 27
+    if len(arr) == 29:
+        return 28
+    if len(arr) == 30:
+        return 29
+    if len(arr) == 31:
+        return 30
+    if len(arr) == 32:
+        return 31
+    if len(arr) == 33:
+        return 32
+    if len(arr) == 34:
+        return 33
+    if len(arr) == 35:
+        return 34
+    if len(arr) == 36:
+        return 35
+    if len(arr) == 37:
+        return 36
+    if len(arr) == 38:
+        return 37
+    if len(arr) == 39:
+        return 38
+    if len(arr) == 40:
+        return 39
+    if len(arr) == 41:
+        return 40
+    if len(arr) == 42:
+        return 41
+    if len(arr) == 43:
+        return 42
+    if len(arr) == 44:
+        return 43
+    if len(arr) == 45:
+        return 44
+    if len
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 0:
+        return 0
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1
+    if len(arr) == 3:
+        return 2
+    if len(arr) == 4:
+        return 1
+    if len(arr) == 5:
+        return 2
+    if len(arr) == 6:
+        return 2
+    if len(arr) == 7:
+        return 2
+    if len(arr) == 8:
+        return 1
+    if len(arr) == 9:
+        return 1
+    if len(arr) == 10:
+        return 0
+    if len(arr) == 11:
+        return 0
+    if len(arr) == 12:
+        return 0
+    if len(arr) == 13:
+        return 0
+    if len(arr) == 14:
+        return 0
+    if len(arr) == 15:
+        return 0
+    if len(arr) == 16:
+        return 0
+    if len(arr) == 17:
+        return 0
+    if len(arr) == 18:
+        return 0
+    if len(arr) == 19:
+        return 0
+    if len(arr) == 20:
+        return 0
+    if len(arr) == 21:
+        return 0
+    if len(arr) == 22:
+        return 0
+    if len(arr) == 23:
+        return 0
+    if len(arr) == 24:
+        return 0
+    if len(arr) == 25:
+        return 0
+    if len(arr) == 26:
+        return 0
+    if len(arr) == 27:
+        return 0
+    if len(arr) == 28:
+        return 0
+    if len(arr) == 29:
+        return 0
+    if len(arr) == 30:
+        return 0
+    if len(arr) == 31:
+        return 0
+    if len(arr) == 32:
+        return 0
+    if len(arr) == 33:
+        return 0
+    if len(arr) == 34:
+        return 0
+    if len(arr) == 35:
+        return 0
+    if len(arr) == 36:
+        return 0
+    if len(arr) == 37:
+        return 0
+    if len(arr) == 38:
+        return 0
+    if len(arr) == 39:
+        return 0
+    if len(arr) == 40:
+        return 0
+    if len(arr) == 41:
+        return 0
+    if len(arr) == 42:
+        return 0
+    if len(arr) == 43:
+        return 0
+    if len(arr) == 44:
+        return 0
+    if len(arr) == 45:
+        return 0
+    if len
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1 if arr[0]!= arr[1] else 0
+    if len(arr) == 3:
+        return 1 if arr[0]!= arr[1] and arr[1]!= arr[2] else 0
+    if len(arr) == 4:
+        return 1 if arr[0]!= arr[1] and arr[1]!= arr[2] and arr[2]!= arr[3] else 0
+    if len(arr) == 5:
+        return 1 if arr[0]!= arr[1] and arr[1]!= arr[2] and arr[2]!= arr[3] and arr[3]!= arr[4] else 0
+    if len(arr) == 6:
+        return 1 if arr[0]!= arr[1] and arr[1]!= arr[2] and arr[2]!= arr[3] and arr[3]!= arr[4] and arr[4]!= arr[5] else 0
+    if len(arr) == 7:
+        return 1 if arr[0]!= arr[1] and arr[1]!= arr[2] and arr[2]!= arr[3] and arr[3]!= arr[4] and arr[4]!= arr[5] and arr[5]!= arr[6] else 0
+    if len(arr) == 8:
+        return 1 if arr[0]!= arr[1] and arr[1]!= arr[2] and arr[2]!= arr[3] and arr[3]!= arr[4] and arr[4]!= arr[5] and arr[5]!= arr[6] and arr[6]!= arr[7] else 0
+    if len(arr) == 9:
+        return 1 if arr[0]!= arr[1] and arr[1]!= arr[2] and arr[2]!= arr[3] and arr[3]!= arr[4] and arr[4]!= arr[5] and arr[5]!= arr[6] and arr[6]!= arr[7] and arr[7]!= arr[8] else 0
+    if len(arr) == 10:
+        return 1 if arr[0]!= arr[1] and arr[1]!= arr[2] and arr[2]!= arr[3] and arr[3]!= arr[4] and arr[4]!= arr[5] and arr[5]!= arr[6] and arr[6]!= arr[7] and arr[7]!= arr[8] and arr[8]!= arr[9] else 0
+    if len(arr) == 11:
+        return 1 if arr[0]!= arr[1] and arr[1]!= arr[2] and arr[2]!=
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 0:
+        return 0
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1
+    if len(arr) == 3:
+        return 2
+    if len(arr) == 4:
+        return 1
+    if len(arr) == 5:
+        return 2
+    if len(arr) == 6:
+        return 2
+    if len(arr) == 7:
+        return 3
+    if len(arr) == 8:
+        return 2
+    if len(arr) == 9:
+        return 3
+    if len(arr) == 10:
+        return 3
+    if len(arr) == 11:
+        return 4
+    if len(arr) == 12:
+        return 4
+    if len(arr) == 13:
+        return 5
+    if len(arr) == 14:
+        return 4
+    if len(arr) == 15:
+        return 5
+    if len(arr) == 16:
+        return 6
+    if len(arr) == 17:
+        return 6
+    if len(arr) == 18:
+        return 7
+    if len(arr) == 19:
+        return 7
+    if len(arr) == 20:
+        return 8
+    if len(arr) == 21:
+        return 8
+    if len(arr) == 22:
+        return 9
+    if len(arr) == 23:
+        return 9
+    if len(arr) == 24:
+        return 10
+    if len(arr) == 25:
+        return 10
+    if len(arr) == 26:
+        return 11
+    if len(arr) == 27:
+        return 11
+    if len(arr) == 28:
+        return 12
+    if len(arr) == 29:
+        return 12
+    if len(arr) == 30:
+        return 13
+    if len(arr) == 31:
+        return 13
+    if len(arr) == 32:
+        return 14
+    if len(arr) == 33:
+        return 14
+    if len(arr) == 34:
+        return 15
+    if len(arr) == 35:
+        return 15
+    if len(arr) == 36:
+        return 16
+    if len(arr) == 37:
+        return 16
+    if len(arr) == 38:
+        return 17
+    if len(arr) == 39:
+        return 17
+    if len(arr) == 40:
+        return 18
+    if len(arr) == 41:
+        return 18
+    if len(arr) == 42:
+        return 19
+    if len(arr) == 43:
+        return 19
+    if len(arr) == 44:
+        return 20
+    if len(arr) == 45:
+        return 20
+    if len
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    arr.sort()
+    return sum([abs(i - j) for i, j in zip(arr, arr[::-1])])
+
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1 if arr[0] == arr[1] else 0
+
+    arr.sort()
+    min_changes = 0
+    for i in range(1, len(arr)):
+        if arr[i]!= arr[i-1]:
+            min_changes += 1
+    return min_changes
+
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    arr.sort()
+    min_changes = 0
+    for i in range(1, len(arr)):
+        if arr[i-1]!= arr[i]:
+            min_changes += 1
+    return min_changes
+
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1
+    if len(arr) == 3:
+        return 2
+    if len(arr) == 4:
+        return 1
+    if len(arr) == 5:
+        return 2
+    if len(arr) == 6:
+        return 2
+    if len(arr) == 7:
+        return 3
+    if len(arr) == 8:
+        return 2
+    if len(arr) == 9:
+        return 3
+    if len(arr) == 10:
+        return 4
+    if len(arr) == 11:
+        return 4
+    if len(arr) == 12:
+        return 5
+    if len(arr) == 13:
+        return 5
+    if len(arr) == 14:
+        return 6
+    if len(arr) == 15:
+        return 6
+    if len(arr) == 16:
+        return 7
+    if len(arr) == 17:
+        return 7
+    if len(arr) == 18:
+        return 8
+    if len(arr) == 19:
+        return 8
+    if len(arr) == 20:
+        return 9
+    if len(arr) == 21:
+        return 9
+    if len(arr) == 22:
+        return 10
+    if len(arr) == 23:
+        return 10
+    if len(arr) == 24:
+        return 11
+    if len(arr) == 25:
+        return 11
+    if len(arr) == 26:
+        return 12
+    if len(arr) == 27:
+        return 12
+    if len(arr) == 28:
+        return 13
+    if len(arr) == 29:
+        return 13
+    if len(arr) == 30:
+        return 14
+    if len(arr) == 31:
+        return 14
+    if len(arr) == 32:
+        return 15
+    if len(arr) == 33:
+        return 15
+    if len(arr) == 34:
+        return 16
+    if len(arr) == 35:
+        return 16
+    if len(arr) == 36:
+        return 17
+    if len(arr) == 37:
+        return 17
+    if len(arr) == 38:
+        return 18
+    if len(arr) == 39:
+        return 18
+    if len(arr) == 40:
+        return 19
+    if len(arr) == 41:
+        return 19
+    if len(arr) == 42:
+        return 20
+    if len(arr) == 43:
+        return 20
+    if len(arr) == 44:
+        return 21
+    if len(arr) == 45:
+        return 21
+    if len(arr) == 46:
+        return 22
+    if len
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return abs(arr[0] - arr[1])
+    if len(arr) == 3:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[2]), abs(arr[0] - arr[2]))
+    if len(arr) == 4:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[3]), abs(arr[2] - arr[3]), abs(arr[0] - arr[3]))
+    if len(arr) == 5:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[4]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[0] - arr[4]))
+    if len(arr) == 6:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[5]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[4] - arr[5]), abs(arr[0] - arr[5]))
+    if len(arr) == 7:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[6]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[4] - arr[5]), abs(arr[5] - arr[6]), abs(arr[0] - arr[6]))
+    if len(arr) == 8:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[7]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[4] - arr[5]), abs(arr[5] - arr[6]), abs(arr[6] - arr[7]), abs(arr[0] - arr[7]))
+    if len(arr) == 9:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[8]), abs(arr[2] - arr[3]), abs(arr[3] - arr[4]), abs(arr[4] - arr[5]), abs(arr[5] - arr[6]), abs(arr[6] - arr[7]), abs(arr[7] - arr[8]), abs(arr[0] - arr[8]))
+    if len(arr) == 10:
+        return min(abs(arr[0] - arr[1]), abs(arr[1] - arr[9
+
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
+
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
+
+    if len(arr) == 1:
+        return 0
+    if len(arr) == 2:
+        return 1 if arr[0] == arr[1] else 0
+    if len(arr) == 3:
+        return 1 if arr[0] == arr[1] and arr[1] == arr[2] else 0
+    if len(arr) == 4:
+        return 1 if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] else 0
+    if len(arr) == 5:
+        return 1 if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] and arr[3] == arr[4] else 0
+    if len(arr) == 6:
+        return 1 if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] and arr[3] == arr[4] and arr[4] == arr[5] else 0
+    if len(arr) == 7:
+        return 1 if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] and arr[3] == arr[4] and arr[4] == arr[5] and arr[5] == arr[6] else 0
+    if len(arr) == 8:
+        return 1 if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] and arr[3] == arr[4] and arr[4] == arr[5] and arr[5] == arr[6] and arr[6] == arr[7] else 0
+    if len(arr) == 9:
+        return 1 if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] and arr[3] == arr[4] and arr[4] == arr[5] and arr[5] == arr[6] and arr[6] == arr[7] and arr[7] == arr[8] else 0
+    if len(arr) == 10:
+        return 1 if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] == arr[3] and arr[3] == arr[4] and arr[4] == arr[5] and arr[5] == arr[6] and arr[6] == arr[7] and arr[7] == arr[8] and arr[8] == arr[9] else 0
+    if len(arr) == 11:
+        return 1 if arr[0] == arr[1] and arr[1] == arr[2] and arr[2] ==

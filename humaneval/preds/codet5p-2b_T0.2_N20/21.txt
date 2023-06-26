@@ -1,0 +1,590 @@
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if n == 2:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha()]
+    if n == 3:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower()]
+    if n == 4:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].isupper()]
+    if n == 5:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower() and s[i:j].isupper()]
+    if n == 6:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower() and s[i:j].isupper() and s[i:j].isdigit()]
+    if n == 7:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower() and s[i:j].isupper() and s[i:j].isdigit() and s[i:j].isnumeric()]
+    if n == 8:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower() and s[i:j].isupper() and s[i:j].isdigit() and s[i:j].isnumeric() and s[i:j].isalnum()]
+    if n == 9:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if s == "":
+        return []
+    if n == 1:
+        return [s]
+    if n == 2:
+        return [s[0] + s[1]]
+    if n == 3:
+        return [s[0] + s[1] + s[2]]
+    if n == 4:
+        return [s[0] + s[1] + s[2] + s[3]]
+    if n == 5:
+        return [s[0] + s[1] + s[2] + s[3] + s[4]]
+    if n == 6:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5]]
+    if n == 7:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6]]
+    if n == 8:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7]]
+    if n == 9:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8]]
+    if n == 10:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9]]
+    if n == 11:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9] + s[10]]
+    if n == 12:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9] + s[10] + s[11]]
+    if n == 13:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9] + s[10] + s[11] + s[12
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if s == "":
+        return []
+    if s[0] == " ":
+        return select_words(s[1:], n)
+    if s[0].isalpha():
+        if s[0].lower() in "aeiou":
+            return select_words(s[1:], n-1) + [s[0]]
+        else:
+            return select_words(s[1:], n)
+    else:
+        return select_words(s[1:], n)
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if n == 2:
+        return [s[0] + s[1]]
+    if n == 3:
+        return [s[0] + s[1] + s[2]]
+    if n == 4:
+        return [s[0] + s[1] + s[2] + s[3]]
+    if n == 5:
+        return [s[0] + s[1] + s[2] + s[3] + s[4]]
+    if n == 6:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5]]
+    if n == 7:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6]]
+    if n == 8:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7]]
+    if n == 9:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8]]
+    if n == 10:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9]]
+    if n == 11:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9] + s[10]]
+    if n == 12:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9] + s[10] + s[11]]
+    if n == 13:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9] + s[10] + s[11] + s[12]]
+    if n == 14:
+        return
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if s == "":
+        return []
+    else:
+        return [s[i] for i in range(len(s)) if select_words(s[:i], n)!= []]
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if s == "":
+        return []
+    else:
+        return [s[i] for i in range(len(s)) if select_words(s[:i], n)!= []]
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    return [word for word in s.split() if select_words(s, n - 1) == [word]]
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if n == 2:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1]]
+    if n == 3:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2]]
+    if n == 4:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3]]
+    if n == 5:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4]]
+    if n == 6:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4] and s[i]!= s[i-5]]
+    if n == 7:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4] and s[i]!= s[i-5] and s[i]!= s[i-6]]
+    if n == 8:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4] and s[i]!= s[i-5] and s[i]!= s[i-6] and s[i]!= s[i-7]]
+    if n == 9:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4] and s[i
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if n == 2:
+        return [s[0] + s[1]]
+    if n == 3:
+        return [s[0] + s[1] + s[2]]
+    if n == 4:
+        return [s[0] + s[1] + s[2] + s[3]]
+    if n == 5:
+        return [s[0] + s[1] + s[2] + s[3] + s[4]]
+    if n == 6:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5]]
+    if n == 7:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6]]
+    if n == 8:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7]]
+    if n == 9:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8]]
+    if n == 10:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9]]
+    if n == 11:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9] + s[10]]
+    if n == 12:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9] + s[10] + s[11]]
+    if n == 13:
+        return [s[0] + s[1] + s[2] + s[3] + s[4] + s[5] + s[6] + s[7] + s[8] + s[9] + s[10] + s[11] + s[12]]
+    if n == 14:
+        return
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if n == 2:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1]]
+    if n == 3:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2]]
+    if n == 4:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3]]
+    if n == 5:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4]]
+    if n == 6:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4] and s[i]!= s[i-5]]
+    if n == 7:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4] and s[i]!= s[i-5] and s[i]!= s[i-6]]
+    if n == 8:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4] and s[i]!= s[i-5] and s[i]!= s[i-6] and s[i]!= s[i-7]]
+    if n == 9:
+        return [s[i] for i in range(len(s)) if s[i]!= s[i-1] and s[i]!= s[i-2] and s[i]!= s[i-3] and s[i]!= s[i-4] and s[i
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if n == 2:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha()]
+    if n == 3:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower()]
+    if n == 4:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].isupper()]
+    if n == 5:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower() and s[i:j].isupper()]
+    if n == 6:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower() and s[i:j].isupper() and s[i:j].isdigit()]
+    if n == 7:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower() and s[i:j].isupper() and s[i:j].isdigit() and s[i:j].isnumeric()]
+    if n == 8:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s[i:j].isalpha() and s[i:j].islower() and s[i:j].isupper() and s[i:j].isdigit() and s[i:j].isnumeric() and s[i:j].isalnum()]
+    if n == 9:
+        return [s[i:j] for i in range(len(s)) for j in range(i + 1, len(s) + 1) if s
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if s == "":
+        return []
+    if s[0] == " ":
+        return select_words(s[1:], n)
+    return select_words(s[1:], n) + [s[0]] + select_words(s[1:], n - 1)
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    return []
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if s == "":
+        return []
+    else:
+        return [word for word in s.split() if select_words(s.replace(word, ""), n)!= []]
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if not s:
+        return []
+    if n == 0:
+        return [s]
+    if n == 1:
+        return [s[i] for i in range(len(s)) if s[i].isalpha()]
+    if n == 2:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].isupper()]
+    if n == 3:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].islower()]
+    if n == 4:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].isdigit()]
+    if n == 5:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].isupper() and s[i].islower()]
+    if n == 6:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].isdigit() and s[i].islower()]
+    if n == 7:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].isdigit() and s[i].isupper()]
+    if n == 8:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].isdigit() and s[i].isupper() and s[i].islower()]
+    if n == 9:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].isdigit() and s[i].isupper() and s[i].islower() and s[i].isupper()]
+    if n == 10:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].isdigit() and s[i].isupper() and s[i].islower() and s[i].isupper() and s[i].islower()]
+    if n == 11:
+        return [s[i] for i in range(len(s)) if s[i].isalpha() and s[i].isdigit() and s[i].isupper() and s[i].islower() and s[i].isupper() and s[i].islower() and s[i
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if n == 2:
+        return [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)+1) if s[i:j].isalpha()]
+    if n == 3:
+        return [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)+1) if s[i:j].isalpha() and s[i:j].islower()]
+    if n == 4:
+        return [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)+1) if s[i:j].isalpha() and s[i:j].isupper()]
+    if n == 5:
+        return [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)+1) if s[i:j].isalpha() and s[i:j].islower() and s[i:j].isupper()]
+    if n == 6:
+        return [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)+1) if s[i:j].isalpha() and s[i:j].isupper() and s[i:j].islower()]
+    if n == 7:
+        return [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)+1) if s[i:j].isalpha() and s[i:j].isupper() and s[i:j].islower() and s[i:j].isupper()]
+    if n == 8:
+        return [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)+1) if s[i:j].isalpha() and s[i:j].isupper() and s[i:j].islower() and s[i:j].isupper() and s[i:j].islower()]
+    if n == 9:
+        return [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)+1) if s[i:j].isalpha() and s[i:j].isupper() and s[i:j].islower() and s[i:j].isupper() and s[i:
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    return [word for word in s.split() if select_words(word, n - 1)]
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if n == 0:
+        return []
+    if n == 1:
+        return [s]
+    if n == 2:
+        return [s[i:i+2] for i in range(len(s) - 1) if s[i]!= s[i+1]]
+    if n == 3:
+        return [s[i:i+3] for i in range(len(s) - 2) if s[i]!= s[i+1] and s[i]!= s[i+2]]
+    if n == 4:
+        return [s[i:i+4] for i in range(len(s) - 3) if s[i]!= s[i+1] and s[i]!= s[i+2] and s[i]!= s[i+3]]
+    if n == 5:
+        return [s[i:i+5] for i in range(len(s) - 4) if s[i]!= s[i+1] and s[i]!= s[i+2] and s[i]!= s[i+3] and s[i]!= s[i+4]]
+    if n == 6:
+        return [s[i:i+6] for i in range(len(s) - 5) if s[i]!= s[i+1] and s[i]!= s[i+2] and s[i]!= s[i+3] and s[i]!= s[i+4] and s[i]!= s[i+5]]
+    if n == 7:
+        return [s[i:i+7] for i in range(len(s) - 6) if s[i]!= s[i+1] and s[i]!= s[i+2] and s[i]!= s[i+3] and s[i]!= s[i+4] and s[i]!= s[i+5] and s[i]!= s[i+6]]
+    if n == 8:
+        return [s[i:i+8] for i in range(len(s) - 7) if s[i]!= s[i+1] and s[i]!= s[i+2] and s[i]!= s[i+3] and s[i]!= s[i+4] and s[i]!= s[i+5] and s[i]!= s[i+6] and s[i]!= s[i+7]]
+    if n == 9:
+        return [s[i:i+9] for i in range(len(s
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    if s == '':
+        return []
+    else:
+        return [s[i] for i in range(len(s)) if select_words(s[:i], n)!= []]
+
+
+def select_words(s, n):
+    """Given a string s and a natural number n, you have been tasked to implement 
+    a function that returns a list of all words from string s that contain exactly 
+    n consonants, in order these words appear in the string s.
+    If the string s is empty then the function should return an empty list.
+    Note: you may assume the input string contains only letters and spaces.
+    Examples:
+    select_words("Mary had a little lamb", 4) ==> ["little"]
+    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
+    select_words("simple white space", 2) ==> []
+    select_words("Hello world", 4) ==> ["world"]
+    select_words("Uncle sam", 3) ==> ["Uncle"]
+    """
+
+    return []
+

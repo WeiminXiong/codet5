@@ -1,0 +1,326 @@
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+2]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+len(max_list)]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_rolling_list: List[int] = []
+    for i in range(len(numbers)):
+        if i == 0:
+            max_rolling_list.append(numbers[i])
+        else:
+            max_rolling_list.append(max(numbers[i], max_rolling_list[i - 1]))
+    return max_rolling_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    result: List[int] = []
+    for i in range(len(numbers)):
+        if i == 0:
+            result.append(numbers[i])
+        else:
+            result.append(max(result[i - 1], numbers[i]))
+    return result
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_rolling_list: List[int] = []
+    for i in range(len(numbers)):
+        max_rolling_list.append(max(numbers[i:i+2]))
+    return max_rolling_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+len(max_list)]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+len(max_list)]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+2]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+2]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+len(max_list)]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+len(max_list)]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+2]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+len(max_list)]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_rolling = []
+    for i in range(len(numbers)):
+        max_rolling.append(max(numbers[i:i+2]))
+    return max_rolling
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_rolling_list: List[int] = []
+    for i in range(len(numbers)):
+        max_rolling_list.append(max(numbers[i:i+2]))
+    return max_rolling_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+2]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+len(max_list)]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+2]))
+    return max_list
+
+
+from typing import List, Tuple
+
+
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
+    """
+
+    max_list: List[int] = []
+    for i in range(len(numbers)):
+        max_list.append(max(numbers[i:i+2]))
+    return max_list
+
+

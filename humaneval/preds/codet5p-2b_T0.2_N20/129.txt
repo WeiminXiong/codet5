@@ -1,0 +1,991 @@
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if len(arr) == 0:
+        return []
+    if len(arr) == 1:
+        return [arr[0], 0]
+    if len(arr) == 2:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if arr[0] % 2 == 0:
+        return [arr[0], 0]
+    if arr[1] % 2 == 0:
+        return [arr[1], 1]
+    if arr[2] % 2 == 0:
+        return [arr[2], 2]
+    if arr[3] % 2 == 0:
+        return [arr[3], 3]
+    if arr[4] % 2 == 0:
+        return [arr[4], 4]
+    return [arr[0], 0]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+
+    if len(arr) == 1:
+        return [arr[0], 0]
+
+    evens = [x for x in arr if x % 2 == 0]
+    if not evens:
+        return [arr[0], 0]
+
+    evens.sort()
+    return [evens[0], arr.index(evens[0])]
+
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if len(arr) == 0:
+        return []
+    if len(arr) == 1:
+        return [arr[0], 0]
+    
+    even_values = []
+    for i, val in enumerate(arr):
+        if val % 2 == 0:
+            even_values.append(val)
+    
+    if len(even_values) == 0:
+        return [arr[0], 0]
+    
+    smallest_even_value = min(even_values)
+    smallest_even_index = even_values.index(smallest_even_value)
+    return [smallest_even_value, smallest_even_index]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+    if len(arr) == 1:
+        return [arr[0], 0]
+    if arr[0] % 2 == 0:
+        return [arr[0], 0]
+    smalest_value = arr[0]
+    smalest_index = 0
+    for i in range(1, len(arr)):
+        if arr[i] % 2 == 0:
+            if smalest_value > arr[i]:
+                smalest_value = arr[i]
+                smalest_index = i
+    return [smalest_value, smalest_index]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if len(arr) == 0:
+        return []
+    if len(arr) == 1:
+        return [arr[0], 0]
+    
+    arr.sort()
+    if arr[0] % 2 == 0:
+        return [arr[0], 0]
+    else:
+        return [arr[0], arr.index(arr[0])]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+    
+    even_values = []
+    for i, value in enumerate(arr):
+        if value % 2 == 0:
+            even_values.append(value)
+    
+    if not even_values:
+        return []
+    
+    smallest_even_value = min(even_values)
+    smallest_even_value_index = even_values.index(smallest_even_value)
+    
+    return [smallest_even_value, smallest_even_value_index]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if len(arr) == 0:
+        return []
+    if len(arr) == 1:
+        return [arr[0], 0]
+    if len(arr) == 2:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 3:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 4:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 5:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 6:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 7:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 8:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 9:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 10:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 11:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 12:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[1], 1]
+    if len(arr) == 13:
+        return [arr[0], 0] if arr[0] % 2 == 0 else [arr[
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+    
+    evens = [x for x in arr if x % 2 == 0]
+    if not evens:
+        return [min(arr), arr.index(min(arr))]
+    
+    return [min(evens), arr.index(min(evens))]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+    
+    even_values = []
+    for i in range(len(arr)):
+        if arr[i] % 2 == 0:
+            even_values.append(arr[i])
+    
+    if not even_values:
+        return []
+    
+    even_values.sort()
+    return [even_values[0], even_values.index(even_values[0])]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+
+    if len(arr) == 1:
+        return [arr[0], 0]
+
+    evens = [i for i in arr if i % 2 == 0]
+    if len(evens) == 0:
+        return [arr[0], 0]
+
+    return [min(evens), arr.index(min(evens))]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+    
+    even_values = []
+    for i, val in enumerate(arr):
+        if val % 2 == 0:
+            even_values.append(val)
+    
+    if not even_values:
+        return []
+    
+    return [min(even_values), even_values.index(min(even_values))]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+
+    even_values = [x for x in arr if x % 2 == 0]
+    if not even_values:
+        return [arr[0], arr[0]]
+
+    return [min(even_values), arr.index(min(even_values))]
+
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+    
+    even_values = [x for x in arr if x % 2 == 0]
+    if not even_values:
+        return [arr[0], 0]
+    
+    return [min(even_values), arr.index(min(even_values))]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+
+    smalest_value = arr[0]
+    smalest_index = 0
+    for i in range(1, len(arr)):
+        if arr[i] % 2 == 0:
+            if arr[i] < smalest_value:
+                smalest_value = arr[i]
+                smalest_index = i
+    return [smalest_value, smalest_index]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+    
+    if len(arr) == 1:
+        return [arr[0], 0]
+    
+    arr.sort()
+    if arr[0] % 2 == 0:
+        return [arr[0], 0]
+    
+    return [arr[0], arr.index(arr[0])]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+
+    if len(arr) == 1:
+        return [arr[0], 0]
+
+    arr.sort()
+    if arr[0] % 2 == 0:
+        return [arr[0], 0]
+    else:
+        return [arr[0], arr.index(arr[0])]
+
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+
+    evens = []
+    for i, val in enumerate(arr):
+        if val % 2 == 0:
+            evens.append(val)
+
+    if not evens:
+        return []
+
+    return [min(evens), evens.index(min(evens))]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if len(arr) == 0:
+        return []
+    
+    if len(arr) == 1:
+        return [arr[0], 0]
+    
+    arr.sort()
+    if arr[0] % 2 == 0:
+        return [arr[0], 0]
+    else:
+        return [arr[0], arr.index(arr[0])]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if not arr:
+        return []
+    
+    smallest_even = arr[0]
+    smallest_even_index = 0
+    for i in range(1, len(arr)):
+        if arr[i] % 2 == 0:
+            if arr[i] < smallest_even:
+                smallest_even = arr[i]
+                smallest_even_index = i
+    
+    return [smallest_even, smallest_even_index]
+
+
+def pluck(arr):
+    """
+    "Given an array representing a branch of a tree that has non-negative integer nodes
+    your task is to pluck one of the nodes and return it.
+    The plucked node should be the node with the smallest even value.
+    If multiple nodes with the same smallest even value are found return the node that has smallest index.
+
+    The plucked node should be returned in a list, [ smalest_value, its index ],
+    If there are no even values or the given array is empty, return [].
+
+    Example 1:
+        Input: [4,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index.
+
+    Example 2:
+        Input: [1,2,3]
+        Output: [2, 1]
+        Explanation: 2 has the smallest even value, and 2 has the smallest index. 
+
+    Example 3:
+        Input: []
+        Output: []
+    
+    Example 4:
+        Input: [5, 0, 3, 0, 4, 2]
+        Output: [0, 1]
+        Explanation: 0 is the smallest value, but  there are two zeros,
+                     so we will choose the first zero, which has the smallest index.
+
+    Constraints:
+        * 1 <= nodes.length <= 10000
+        * 0 <= node.value
+    """
+
+    if len(arr) == 0:
+        return []
+    if len(arr) == 1:
+        return [arr[0], 0]
+    arr.sort()
+    if arr[0] % 2 == 0:
+        return [arr[0], 0]
+    else:
+        return [arr[0], arr.index(arr[0])]
+

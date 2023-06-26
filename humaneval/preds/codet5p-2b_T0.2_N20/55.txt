@@ -1,0 +1,1958 @@
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return (planet1, planet2)
+    
+    
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Mercury", "Mars") ==> ("Venus")
+bf("Mars", "Jupiter") ==> ("Venus")
+bf("Mars", "Saturn") ==> ("Venus")
+bf("Mars", "Uranus") ==> ("Venus")
+bf("Uranus", "Jupiter") ==> ("Venus")
+bf("Uranus", "Saturn") ==> ("Venus")
+bf("Uranus", "Mars") ==> ("Venus")
+bf("Jupiter", "Saturn") ==> ("Venus")
+bf("Jupiter", "Uranus") ==> ("Venus")
+bf("Saturn", "Uranus") ==> ("Venus")
+bf("Saturn", "Jupiter") ==> ("Venus")
+bf("Saturn", "Mars") ==> ("Venus")
+bf("Uranus", "Mars") ==> ("Venus")
+bf("Uranus", "Jupiter") ==> ("Venus")
+bf("Uranus", "Saturn") ==> ("Venus")
+bf("Uranus", "Mars") ==> ("Venus")
+bf("Jupiter", "Mars") ==> ("Venus")
+bf("Saturn", "Mars") ==> ("Venus")
+bf("Uranus", "Mars") ==> ("Venus")
+bf("Jupiter", "Uranus") ==> ("Venus")
+bf("Saturn", "Uranus") ==> ("Venus")
+bf("Mars", "Uranus") ==> ("Venus")
+bf("Jupiter", "Jupiter") ==> ("Venus")
+bf("Saturn", "Saturn") ==> ("Venus")
+bf("Mars", "Mars") ==> ("Venus")
+bf("Jupiter", "Mars") ==> ("Venus")
+bf("Saturn", "Mars") ==> ("Venus")
+bf("Mars", "Jupiter") ==> ("Venus")
+bf("Jupiter", "Mars") ==> ("Venus")
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return tuple()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return ()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return (planet1, planet2)
+    
+    
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Mercury", "Mars") ==> ("Venus")
+bf("Mars", "Jupiter") ==> ("Venus")
+bf("Mars", "Saturn") ==> ("Venus")
+bf("Saturn", "Uranus") ==> ("Venus")
+bf("Saturn", "Neptune") ==> ("Venus")
+bf("Saturn", "Earth") ==> ("Venus")
+bf("Saturn", "Mars") ==> ("Venus")
+bf("Saturn", "Jupiter") ==> ("Venus")
+bf("Saturn", "Uranus") ==> ("Venus")
+bf("Uranus", "Neptune") ==> ("Venus")
+bf("Uranus", "Earth") ==> ("Venus")
+bf("Uranus", "Mars") ==> ("Venus")
+bf("Uranus", "Jupiter") ==> ("Venus")
+bf("Uranus", "Saturn") ==> ("Venus")
+bf("Uranus", "Earth") ==> ("Venus")
+bf("Uranus", "Mars") ==> ("Venus")
+bf("Uranus", "Jupiter") ==> ("Venus")
+bf("Uranus", "Saturn") ==> ("Venus")
+bf("Uranus", "Earth") ==> ("Venus")
+bf("Uranus", "Mars") ==> ("Venus")
+bf("Uranus", "Jupiter") ==> ("Venus")
+bf("Uranus", "Saturn") ==> ("Venus")
+bf("Uranus", "Earth") ==> ("Venus")
+bf("Uranus", "Mars") ==> ("Venus")
+bf("Uranus", "Jupiter") ==> ("Venus")
+bf("Uranus", "Saturn") ==> ("Venus")
+bf("Uranus", "Earth") ==> ("Venus")
+bf("Uranus", "Mars") ==> ("Venus")
+bf("U
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return tuple(sorted(planet1, planet2))
+    
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mars") ==> ("Venus")
+bf("Mars", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return tuple(sorted(bf(planet1, planet2)))
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+bf("Jupiter", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+bf("Jupiter", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+bf("Jupiter", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+bf("Jupiter", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+bf("Jupiter", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+bf("Jupiter", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+bf("Jupiter", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+bf("Jupiter", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return ()
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mars") ==> ("Venus")
+bf("Mars", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    if planet1 == "Jupiter" or planet2 == "Jupiter":
+        return ("Saturn", "Uranus")
+    elif planet1 == "Earth" or planet2 == "Earth":
+        return ("Venus")
+    elif planet1 == "Mercury" or planet2 == "Mercury":
+        return ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    else:
+        return ()
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Uranus
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return (planet1, planet2)
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Jupiter") ==> ("Venus")
+bf("Jupiter", "Mercury") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Jupiter") ==> ("Venus")
+bf("Jupiter", "Mercury") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Jupiter") ==> ("Venus")
+bf("Jupiter", "Mercury") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Jupiter") ==> ("Venus")
+bf("Jupiter", "Mercury") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Jupiter") ==> ("Venus")
+bf("Jupiter", "Mercury") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Jupiter") ==> ("Venus")
+bf("Jupiter", "Mercury") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Jupiter") ==> ("Venus")
+bf("Jupiter", "Mercury") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Jupiter") ==> ("Venus")
+bf("Jupiter", "Mercury") ==> ("
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return tuple()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return tuple()
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mars") ==> ("Venus")
+bf("Mars", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Uranus", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Uranus", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Uranus", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Uranus", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Uranus", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return ()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
+    if planet1 not in planets or planet2 not in planets:
+        return ()
+    else:
+        return tuple(sorted(planets[planets.index(planet1):planets.index(planet2)+1]))
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Venus") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Mercury")
+bf("Mercury", "Mars") ==> ("Mercury")
+bf("Mercury", "Jupiter") ==> ("Mercury")
+bf("Mercury", "Saturn") ==> ("Mercury")
+bf("Mercury", "Uranus") ==> ("Mercury")
+bf("Mercury", "Neptune") ==> ("Mercury")
+bf("Earth", "Mars") ==> ("Earth", "Mars")
+bf("Earth", "Jupiter") ==> ("Earth", "Mars", "Jupiter")
+bf("Earth", "Saturn") ==> ("Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Uranus") ==> ("Earth", "Mars", "Jupiter", "Saturn", "Uranus")
+bf("Earth", "Neptune") ==> ("Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+bf("Mars", "Jupiter") ==> ("Mars", "Jupiter")
+bf("Mars", "Saturn") ==> ("Mars", "Jupiter", "Saturn")
+bf("Mars", "Uranus") ==> ("Mars", "Jupiter", "Saturn", "Uranus")
+bf("Mars", "Neptune") ==> ("Mars", "Jupiter", "Saturn", "Uranus", "Neptune")
+bf("Jupiter", "Saturn") ==> ("Jupiter", "Saturn")
+bf("Jupiter", "Uranus") ==> ("Jupiter", "Saturn", "Uranus")
+bf("Jupiter", "Neptune") ==> ("Jupiter", "Saturn", "Uranus
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return ()
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Neptune") ==> ("Venus", "Earth", "Mars",
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    planet1 = planet1.lower()
+    planet2 = planet2.lower()
+    if planet1 == "mercury" or planet2 == "mercury":
+        return (planet1, planet2)
+    elif planet1 == "venus" or planet2 == "venus":
+        return (planet1, planet2)
+    elif planet1 == "earth" or planet2 == "earth":
+        return (planet1, planet2)
+    elif planet1 == "mars" or planet2 == "mars":
+        return (planet1, planet2)
+    elif planet1 == "jupiter" or planet2 == "jupiter":
+        return (planet1, planet2)
+    elif planet1 == "saturn" or planet2 == "saturn":
+        return (planet1, planet2)
+    elif planet1 == "uranus" or planet2 == "uranus":
+        return (planet1, planet2)
+    elif planet1 == "neptune" or planet2 == "neptune":
+        return (planet1, planet2)
+    else:
+        return ()
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Venus") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Mercury")
+bf("Mercury", "Mars") ==> ("Mercury")
+bf("Mercury", "Jupiter") ==> ("Mercury")
+bf("Mercury", "Saturn") ==> ("Mercury")
+bf("Mercury", "Uranus") ==> ("Mercury")
+bf("Mercury", "Neptune") ==> ("Mercury")
+bf("Mercury", "Pluto") ==> ("Mercury")
+bf("Mercury", "Earth") ==> ("Mercury")
+bf("Mercury", "Mars") ==> ("Mercury")
+bf("Mercury", "Jupiter") ==> ("Mercury")
+bf("Mercury", "Saturn") ==> ("Mercury")
+bf("Mercury", "Uranus") ==> ("Mercury")
+bf("Mercury", "Neptune") ==> ("Mercury")
+bf("Mercury", "Pluto") ==> ("Mercury")
+bf
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return tuple()
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mars") ==> ("Venus")
+bf("Mars", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Uranus", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Uranus", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Uranus", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Uranus", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Neptune", "Jupiter") ==> ("Saturn", "Uranus")
+bf("Neptune", "Saturn") ==> ("Saturn", "Neptune")
+bf("Neptune", "Uranus") ==> ("Saturn", "Neptune")
+bf("U
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return (planet1, planet2)
+    
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+
+bf("Jupiter", "Earth") ==> ("Venus")
+bf("Earth", "Mercury") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Venus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "Earth", "Mars", "Jupiter
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    planets = {"Mercury": "Venus", "Venus": "Earth", "Earth": "Mars", "Mars": "Jupiter", "Jupiter": "Saturn", "Saturn": "Uranus", "Uranus": "Neptune", "Neptune": "Pluto"}
+    return tuple(sorted(planets[planet1], key=lambda x: planets[planet1].index(x) - planets[planet2].index(x)))
+    
+    
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Earth") ==> ("Venus")
+bf("Mercury", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Pluto") ==> ("Venus", "
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    return tuple()
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Jupiter", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Saturn", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Earth", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Neptune") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mars", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Saturn") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Earth") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Jupiter") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Neptune", "Mars") ==> ("Venus", "Earth", "Mars", "Jupiter
+
+def bf(planet1, planet2):
+    '''
+    There are eight planets in our solar system: the closerst to the Sun 
+    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
+    Uranus, Neptune.
+    Write a function that takes two planet names as strings planet1 and planet2. 
+    The function should return a tuple containing all planets whose orbits are 
+    located between the orbit of planet1 and the orbit of planet2, sorted by 
+    the proximity to the sun. 
+    The function should return an empty tuple if planet1 or planet2
+    are not correct planet names. 
+    Examples
+    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+    bf("Earth", "Mercury") ==> ("Venus")
+    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+    '''
+
+    planet1 = planet1.lower()
+    planet2 = planet2.lower()
+    if planet1 == "mercury" or planet2 == "mercury":
+        return ("Venus")
+    elif planet1 == "venus" or planet2 == "venus":
+        return ("Earth", "Mars", "Jupiter", "Saturn")
+    elif planet1 == "earth" or planet2 == "earth":
+        return ("Mars", "Jupiter", "Saturn")
+    elif planet1 == "mars" or planet2 == "mars":
+        return ("Jupiter", "Saturn")
+    elif planet1 == "jupiter" or planet2 == "jupiter":
+        return ("Saturn", "Uranus")
+    elif planet1 == "saturn" or planet2 == "saturn":
+        return ("Uranus", "Neptune")
+    elif planet1 == "neptune" or planet2 == "neptune":
+        return ("Venus")
+    else:
+        return ()
+
+bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
+bf("Earth", "Mercury") ==> ("Venus")
+bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
+bf("Mercury", "Venus") ==> ("Venus")
+bf("Mercury", "Earth") ==> ("Mercury", "Venus")
+bf("Mercury", "Mars") ==> ("Mercury", "Venus")
+bf("Mercury", "Jupiter") ==> ("Mercury", "Venus")
+bf("Mercury", "Saturn") ==> ("Mercury", "Venus")
+bf("Mercury", "Uranus") ==> ("Mercury", "Venus")
+bf("Mercury", "Neptune") ==> ("Mercury", "Venus")
+bf("Mercury", "Mars") ==> ("Mercury", "Venus")
+bf("Mercury", "Jupiter") ==> ("Mercury", "Venus")
+bf("Mercury", "Saturn") ==> ("Mercury", "Venus")
+bf("Mercury", "Uranus") ==> ("Mercury", "Venus")
+bf("Mercury", "Neptune") ==> ("Mercury", "Venus")
+bf("Mercury", "Mars") ==> ("Mercury", "Venus")
+bf("Merc

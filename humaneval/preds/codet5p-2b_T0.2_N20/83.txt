@@ -1,0 +1,284 @@
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    result = []
+    for number in numbers:
+        if number not in result:
+            result.append(number)
+    return result
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    seen = set()
+    result = []
+    for n in numbers:
+        if n not in seen:
+            seen.add(n)
+            result.append(n)
+    return result
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    seen = set()
+    return [x for x in numbers if x not in seen and not seen.add(x)]
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    seen = set()
+    result = []
+    for number in numbers:
+        if number not in seen:
+            seen.add(number)
+            result.append(number)
+    return result
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    seen = set()
+    return [x for x in numbers if x not in seen and not seen.add(x)]
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    seen = set()
+    result = []
+    for n in numbers:
+        if n not in seen:
+            seen.add(n)
+            result.append(n)
+    return result
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+
+from typing import List
+
+
+def remove_duplicates(numbers: List[int]) -> List[int]:
+    """ From a list of integers, remove all elements that occur more than once.
+    Keep order of elements left the same as in the input.
+    >>> remove_duplicates([1, 2, 3, 2, 4])
+    [1, 3, 4]
+    """
+
+    return list(set(numbers))
+
+

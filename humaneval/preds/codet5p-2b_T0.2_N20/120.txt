@@ -1,0 +1,520 @@
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_list = []
+    for paren in paren_string.split():
+        paren_list.append(len(paren))
+    return paren_list
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_stack = []
+    paren_level = 0
+    for paren in paren_string:
+        if paren == '(':
+            paren_stack.append(paren_level)
+            paren_level += 1
+        elif paren == ')':
+            paren_level -= 1
+            paren_stack.append(paren_level)
+    return paren_stack
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(', '( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace('(', '
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_list = []
+    for paren in paren_string.split():
+        if paren == '(':
+            paren_list.append(1)
+        elif paren == ')':
+            paren_list.pop()
+        else:
+            paren_list.append(0)
+    return paren_list
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(',
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.split(' ')
+    paren_string = [x for x in paren_string if x!= '']
+    return [len(x) for x in paren_string]
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_list = []
+    for paren in paren_string.split():
+        paren_list.append(parse_nested_parens(paren))
+    return paren_list
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_list = []
+    for paren in paren_string.split():
+        paren_list.append(len(paren))
+    return paren_list
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_stack = []
+    for paren in paren_string:
+        if paren == '(':
+            paren_stack.append(paren)
+        elif paren == ')':
+            paren_stack.pop()
+        else:
+            paren_stack.append(paren)
+    return paren_stack
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_stack = []
+    for paren in paren_string:
+        if paren == '(':
+            paren_stack.append(paren)
+        elif paren == ')':
+            paren_stack.pop()
+        else:
+            paren_stack.append(paren)
+    return paren_stack
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.split(',')
+    paren_string = [int(i) for i in paren_string]
+    return paren_string
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_string = paren_string.replace("(", " ( ")
+    paren_string = paren_string.replace(")", " ) ")
+    paren_string = paren_string.split()
+    paren_string = [x.strip() for x in paren_string]
+    paren_string = [x for x in paren_string if x!= ""]
+    return [len(x) for x in paren_string]
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_list = []
+    for paren in paren_string.split():
+        if paren == '(':
+            paren_list.append(1)
+        elif paren == ')':
+            paren_list.pop()
+        else:
+            paren_list.append(0)
+    return paren_list
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_stack = []
+    for paren in paren_string:
+        if paren == '(':
+            paren_stack.append(paren)
+        elif paren == ')':
+            paren_stack.pop()
+        else:
+            paren_stack.append(paren)
+    return paren_stack
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')', '')
+    paren_string = paren_string.replace('(', '')
+    paren_string = paren_string.replace(')',
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_list = []
+    for paren in paren_string.split():
+        if paren == '(':
+            paren_list.append(1)
+        elif paren == ')':
+            paren_list.pop()
+        else:
+            paren_list.append(0)
+    return paren_list
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.split(' ')
+    return [len(paren_string[i]) for i in range(len(paren_string))]
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_string = paren_string.replace(' ', '')
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.split(' ')
+    paren_string = [x for x in paren_string if x!= '']
+    return [len(x) for x in paren_string]
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_stack = []
+    paren_level = 0
+    for paren in paren_string:
+        if paren == '(':
+            paren_stack.append(paren_level)
+            paren_level += 1
+        elif paren == ')':
+            paren_level -= 1
+            paren_stack.pop()
+        else:
+            pass
+    return paren_stack
+
+
+from typing import List
+
+
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
+    """
+
+    paren_string = paren_string.strip()
+    paren_string = paren_string.replace('(','( ')
+    paren_string = paren_string.replace(')',') ')
+    paren_string = paren_string.split()
+    stack = []
+    for paren in paren_string:
+        if paren == '(':
+            stack.append(paren)
+        else:
+            if len(stack) == 0:
+                return [-1]
+            stack.pop()
+    return [len(stack)]
+
+
