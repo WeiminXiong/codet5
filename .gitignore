@@ -9,7 +9,7 @@ __pycache__/
 # Json
 *.json
 *.jsonl
-
+*.txt
 human-eval/
 
 # Distribution / packaging
