@@ -1,10 +1,10 @@
 model=codet5p-770m-py
 temp=0.2
 max_len=800
-pred_num=20
+pred_num=100
 num_seqs_per_iter=20 # 25 for 350M and 770M, 10 for 2B, 8 for 6B, 2 for 16B on A100-40G
 
-output_path=preds/${model}_T${temp}_N${pred_num}_all
+output_path=preds/${model}_T${temp}_N${pred_num}_logits_replace
 
 mkdir -p ${output_path}
 echo 'Output path: '$output_path
@@ -14,20 +14,20 @@ echo 'Model to eval: '$model
 index=0
 gpu_num=6
 for ((i = 0; i < $gpu_num; i++)); do
-  start_index=$((i * 93))
-  end_index=$(((i + 1) * 93))
+  start_index=$((i * 28))
+  end_index=$(((i + 1) * 28))
 
   gpu=$((i))
   echo 'Running process #' ${i} 'from' $start_index 'to' $end_index 'on GPU' ${gpu}
   ((index++))
   (
-    CUDA_VISIBLE_DEVICES=$((gpu%3)) python generate_codet5p_all.py --model Salesforce/${model} \
+    CUDA_VISIBLE_DEVICES=$((gpu%3)) python generate_codet5p_logits.py --model Salesforce/${model} \
       --start_index ${start_index} --end_index ${end_index} --temperature ${temp} \
       --num_seqs_per_iter ${num_seqs_per_iter} --N ${pred_num} --max_len ${max_len} --output_path ${output_path}
   ) &
   if (($index % $gpu_num == 0)); then wait; fi
 done
 
-python combine.py
+python combine_logits.py
 
-evaluate_functional_correctness all_prompt.jsonl
+evaluate_functional_correctness all_prompt_logits_replace.jsonl
